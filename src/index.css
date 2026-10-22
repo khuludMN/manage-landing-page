@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Be Vietnam Pro", Arial, sans-serif;
+  color: #242d52;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+@layer components {
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-[#f3603c] px-8 py-3 text-sm font-bold text-white shadow-md transition duration-200 hover:bg-[#f87960];
+  }
+
+  .nav-link {
+    @apply text-sm font-medium transition-colors duration-200 hover:text-[#9095a7];
+  }
+
+  .footer-link {
+    @apply transition-colors duration-200 hover:text-[#f3603c];
+  }
+}
